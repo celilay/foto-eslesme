@@ -40,3 +40,15 @@ div#oyun-cerceve {
   .kart-arkayuz {
     transform: rotateY(180deg);
   }
+
+  .kutlama{
+    top:-50px;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 30%;
+  } 
+
+  .gizle{
+    display: none;
+  }
