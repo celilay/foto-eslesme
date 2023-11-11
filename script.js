@@ -93,14 +93,29 @@ function kartTiklama(olay) {
       secilenKart.classList.add("eslesti");
 
       puan++;
-
+        
       console.log(puan);
 
       puanText.innerHTML = puan;
 
       /*
             Görev 1: Kullanıcı 4 kartı da eşleştirdiğinde sayfa ortasında beliren hareketli gif dosyası formatında bir kutlama görseli belirsin ve bu fotoğraf 5 saniye sonra ortadan kaybolsun.
-        */
+           */
+
+        const kutlama = document.querySelector(".kutlama")
+            if(puan === 4){
+
+                setTimeout(()=>{
+                    kutlama.src = ""
+                    kutlama.classList.add("gizle")
+                },5000)
+                kutlama.src = "https://www.hareketligifler.net/data/media/492/havai-fisek-hareketli-resim-0021.gif"
+                kutlama.classList.remove("gizle")
+            }
+
+
+
+
 
 
       acikKart.classList.remove("acik");
